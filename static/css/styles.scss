@@ -1,0 +1,59 @@
+@import "variables.scss";
+
+.introsection {
+	color: $white;
+
+	.zoomIn {
+		animation: none;
+	}
+}
+
+.splitsection {
+	display: flex;
+	width: 100%;
+	padding: 0;
+	flex-direction: row;
+	.splitleft,
+	.splitright {
+		overflow:auto;
+		flex: 1;
+		display: flex;
+		flex-flow: column;
+		justify-content: center;
+		padding: 1.5rem 3.5rem;
+	}
+	p{
+		margin-bottom: 2rem;
+	}
+}
+
+.introtext {
+	font-weight: 400;
+}
+
+.lowpadding{
+	padding: 0.25rem;
+}
+
+.lowmargin{
+	margin: 0.5rem;
+}
+
+.unorderedlist{
+	li{
+		font-size: 1.75rem;
+	}
+}
+
+a.socialbutton{
+	color: $socialgrey;
+	font-weight: 600;
+	border: 0.15rem solid $socialgrey;
+	padding: 0.75rem 1rem;
+	border-radius: 0.35rem;
+}
+
+a.socialbutton:hover{
+	background: $socialgrey;
+	color: $white;
+}
